@@ -35,7 +35,7 @@ graph main_graph {
 
         info_system = spawn main_root -[transition(intent="information system")]-> node::state(
                                             title = "Information System",
-                                            message = "Tell me about the information system you'd like",
+                                            message = "Tell me about the information system you'd like?",
                                             prompts = ["quit"]
                             ); 
     }

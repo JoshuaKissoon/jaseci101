@@ -6,6 +6,8 @@ walker talker {
 
         utterance = std.input("> ");
 
+        std.out(utterance);
+
         if(utterance == "quit"): disengage;
 
         take -[transition(intent == utterance)]-> node::state else {
